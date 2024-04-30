@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script>
+function changeContent() {
+    var highlightSection = document.getElementById('highlight');
+    highlightSection.innerHTML = '<h1>Conteúdo Alterado!</h1><p>Agora você está explorando novas informações.</p>';
+}
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png.png" href="img/pixelart.png">
+    <title>Blog | DEV Café®</title>
+    <style>
+        
+       
+       body {
+            background-color: rgb(255, 255, 255); /* Define o fundo como preto */
+            color: rgb(43, 41, 41); /* Define a cor do texto como branco */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; }
+ header {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    align-items: center;
+}
+
+header img.logo {
+    margin: auto; 
+    display: block;
+    border-radius: 20px
+}
+
+nav ul {
+    margin-top: 10px;
+    list-style-type: style type none ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav ul li {
+    margin-top: 10px;
+    list-style-type: style type none ;
+    display: flex   ;
+    justify-content: space-between;
+    align-items: left;
+    margin-right: 30px;
+
+}
+/*isso muda a cor do texto*/
+nav a {
+    text-decoration: none;
+    color: rgb(211, 166, 129);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+#highlight {
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+}
+/* isso muda a cor do botão*/
+button {
+    background-color:peru;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor:pointer;
+    border: none;
+    border-radius: 20px;
+}
+/* isso muda a cor do botão quando o mouse passar por cima */
+button:hover {background-color:sandybrown }
+.texto:hover { text-decoration: underline;}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Adicione estas regras CSS para estilizar a imagem */
+#highlight img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior */
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-family:'Courier New', Courier, monospace
+}
+.texto{color: #333;}
+.botõesdeescolha {color: rgb(204, 135, 78);}
+.botõesdeescolha:hover {text-decoration: underline;}
+
+.imagem_sobre{ 
+    height: auto;
+    width: 800px;
+}
+
+
+    </style>
+        
+</head>
+  <body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="café.html"><img src=img/pixelart.png alt="logo do café" class="logo"></a></li>
+                <li><a href="sobre.html" class="botõesdeescolha"><h4>Saiba mais</h4></a></li>
+                <li><a href="Lançamentos.html" class="botõesdeescolha"><h4>Lançamentos</h4></a></li>
+                <li><a href="menu.html" class="botõesdeescolha"><h4>Explore nosso cardápio</h4></a></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <main>
+        <section id="highlight">
+            <h1 class="texto"><u>Descubra mais sobre nós</u></h1>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Nosso Website. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
